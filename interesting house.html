@@ -1,0 +1,752 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="author" content="iceStone <ice@wedn.net>">
+ <title>奇趣屋，发现更多有趣的物品</title>
+ <link rel="shortcut icon" href="favicon.ico">
+ <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+ <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/iconfont.css">
+</head>
+
+<body>
+  <header>
+   <!-- /手机版 -->
+	<div class="topbar hidden-sm hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="tb-1 col-md-5 text-center">
+            <a href="#" class="text-muted">
+              <i class="icon-mobilephone"></i>
+              <span>手机奇趣屋</span>
+              <i class="glyphicon glyphicon-chevron-down"></i>
+              <img src="img/erweima2.jpg" alt="扫一扫">
+            </a>
+          </div>
+		   <!-- /注册/登录 -->
+          <div class="tb-2 col-md-6 text-center">
+            <a href="#" class="btn btn-register btn-sm">免费注册</a>
+            <a href="#" class="text-muted" data-toggle="modal" data-target=".modal">登录</a>
+          </div>
+        </div>
+      </div>
+	</div>
+	 <!-- /下拉菜单 -->
+	<nav class="navbar navbar-itcast" data-spy="affix" data-offset-top="200" data-offset-bottom="1000">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
+            <span class="sr-only">切换菜单显示</span>
+            <span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="test" id="nav_menu">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页 </a></li>			
+            <li><a href="#">限时优惠</a>
+			  <ul>
+                 <li>限时秒杀</li>
+                 <li>优惠券</li>
+                 <li>拼购产品</li>
+              </ul>
+			</li>            
+			<li><a href="#">买好物</a>
+			  <ul>
+                 <li>宿舍神器</li>
+                 <li>伸缩产品</li>
+                 <li>收纳产品</li>
+              </ul>
+			</li>
+            <li><a href="#">创意产品</a>
+			  <ul>
+                 <li>惊呆了抱枕</li>
+                 <li>黑科技产品</li>
+                 <li>折叠式产品</li>
+              </ul>
+			</li>
+            <li><a href="#">专属设计</a>
+			  <ul>
+                 <li>私人定制</li>
+              </ul>
+			</li>
+            <li><a href="#">最新动态</a>
+			  <ul>
+                 <li>最近上新</li>
+                 <li>已关注上新</li>
+                 <li>猜你喜欢</li>
+              </ul>
+			</li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm ">
+			<li><a href="#" class="text-muted">小趣屋</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+   </header>
+   <!-- 通栏轮播 -->
+  <section id="home_slide" class="carousel slide" data-ride="carousel">
+    <!-- 指示器 -->
+    <ol class="carousel-indicators">
+      <li data-target="#home_slide" data-slide-to="0" class="active"></li>
+      <li data-target="#home_slide" data-slide-to="1"></li>
+      <li data-target="#home_slide" data-slide-to="2"></li>
+      <li data-target="#home_slide" data-slide-to="3"></li>
+    </ol>
+    <!-- 轮播页 -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="item-image" data-image-large="img/slide_01_2000x410.jpg" data-image-small="img/slide_01_640x340.jpg" data-image-alt="哈哈"></div>
+      </div>
+      <div class="item">
+        <div class="item-image" data-image-large="img/slide_02_2000x410.jpg" data-image-small="img/slide_02_640x340.jpg" data-image-alt="哈哈"></div>
+      </div>
+      <div class="item">
+        <div class="item-image" data-image-large="img/slide_03_2000x410.jpg" data-image-small="img/slide_03_640x340.jpg" data-image-alt="哈哈"></div>
+      </div>
+      <div class="item">
+        <div class="item-image" data-image-large="img/slide_04_2000x410.jpg" data-image-small="img/slide_04_640x340.jpg" data-image-alt="哈哈"></div>
+      </div>
+    </div>
+    <!-- 控制按钮 -->
+    <a class="left carousel-control" href="#home_slide" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">上一张</span>
+    </a>
+    <a class="right carousel-control" href="#home_slide" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">下一张</span>
+    </a>
+  </section>
+
+    <!-- 左侧导航栏 -->
+	 <!-- /搜索框 -->
+	<div class="search bar">
+     <form>
+        <input placeholder="床边挂篮" name="cname" type="text" style="width:90%">
+        <button type="submit"></button>
+     </form>
+    </div>
+  <div class="leftNav">
+    <ul class="nav1">
+        <li>全部商品</li>
+        <ul class="nav2">
+            <li>时尚老花镜</li>
+            <li>水冰月移动充</li>
+        </ul>
+        <li>热销产品</li>
+        <ul class="nav2">
+            <li>纯锡抑菌器</li>
+            <li>汉堡杯垫</li>
+        </ul>
+        <li>电子产品</li>
+        <ul class="nav2">
+            <li>日本多功能电烤盆</li>
+            <li>Alexa3空气净化器</li>
+        </ul>
+        <li>文创产品</li>
+        <ul class="nav2">
+            <li>长颈鹿小姐卷尺</li>
+            <li>Flip Up翻转书架</li>
+        </ul>
+        <li>家居生活产品</li>
+        <ul class="nav2">
+            <li>冰岩醇酒针</li>
+            <li>圣诞老人收纳罐</li>
+        </ul>
+    </ul>
+</div>
+  <!-- /左侧导航栏 -->
+  <!-- 右侧工具栏 -->
+  <div style="height:2px;"></div>
+<div class="cndns-right">
+    <div class="cndns-right-meau meau-sev">
+        <a href="javascript:" class="cndns-right-btn">
+            <i class="iconfont icon-gouwuche"></i>
+            <p>立即<br>购买</p>
+        </a>
+        <div class="cndns-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    <i class="iconfont icon-gouwuche"></i>
+                    <p>加入购物车
+                    
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                
+                
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cndns-right-meau meau-contact">
+        <a href="javascript:" class="cndns-right-btn">
+            <i class="iconfont icon-dianhua"></i>
+            <p>客服<br>热线</p>
+        </a>
+        <div class="cndns-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    <i class="iconfont icon-dianhua"></i>
+                    <p>400-920-9933
+                        <br>
+                        <i>7*24小时客服服务热线</i>
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cndns-right-meau meau-code">
+        <a href="javascript:" class="cndns-right-btn">
+            <i class="iconfont icon-weixin"></i>
+            <p>关注<br>微信</p>
+        </a>
+        <div class="cndns-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    <img src="weijinsuo/images/er.jpg">
+                    <i>关注官方微信</i>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cndns-right-meau meau-code shadowbox">
+        <a href="javascript:" class="cndns-right-btn">
+            <i class="iconfont icon-xiaoxi"></i>
+            <p>消息提示</p>
+        </a>
+        <div class="cndns-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    
+                    <i>消息</i>
+                </div>
+				<div class="sev-b">
+                    <h4>未读消息</h4>
+                    <textarea class="form-control" placeholder="请查看未读消息"></textarea>
+                </div>
+                <div class="btnbox">
+                    <button class="btn">取消</button>
+                    <button class="btn btn-primary">回复</button>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cndns-right-meau meau-top" id="top-back" style="display: none;">
+        <a href="javascript:" class="cndns-right-btn" onclick="topBack()">
+            <i class="icon iconfont icon-up"></i>
+            <em>顶部</em>
+        </a>
+    </div>
+
+</div>
+  <!-- /右侧工具栏 -->
+  <!-- 投资产品 -->
+  <section id="products">
+    <div class="container">
+      <!-- Nav tabs -->
+      <div class="touch-scroll">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#category_01" aria-controls="category_01" role="tab" data-toggle="tab">热销产品</a></li>
+          <li role="presentation"><a href="#category_02" aria-controls="category_02" role="tab" data-toggle="tab">限时抢</a></li>
+          <li role="presentation"><a href="#category_03" aria-controls="category_03" role="tab" data-toggle="tab">团购</a></li>
+          <li role="presentation"><a href="#category_06" aria-controls="category_06" role="tab" data-toggle="tab">设计品牌</a></li>
+          <li class="hidden-sm hidden-xs pull-right"><a href="#" class="btn btn-link">更多</a></li>
+        </ul>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="category_01">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product active">
+                <div class="panel-heading">
+                  <p><strong>98923</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>法国时尚夹鼻式老花镜</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>350<sub>元</sub></dd>
+                    </div>
+					 <div class="col-xs-6 text-left">
+                      <dt>优惠价(元)</dt>
+                      <dd>200<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+
+                  </p>
+                  <p><strong>89703</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>木柄滤水壶 滤水壶届的iPhone</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>280<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价</dt>
+                      <dd>198<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_02">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+                    
+                  </p>
+                  <p><strong>455589</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>天然木手持PTC陶瓷电暖器</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>499<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价)</dt>
+                      <dd>438<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+      
+                  </p>
+                  <p><strong>788643</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>月光水晶变身盒 行动电源</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>138<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价</dt>
+                      <dd>98<sub>元</sub></dd>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+                  </p>
+                  <p><strong>110239</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>认真又恶搞的寿司袜</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>10.9<sub>双</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>现价</dt>
+                      <dd>8.8<sub>双</sub></dd>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_03">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+                    
+                  </p>
+                  <p><strong>455589</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>天然木手持PTC陶瓷电暖器</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>499<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价)</dt>
+                      <dd>438<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+      
+                  </p>
+                  <p><strong>788643</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>月光水晶变身盒 行动电源</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>138<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价</dt>
+                      <dd>98<sub>元</sub></dd>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+                  </p>
+                  <p><strong>110239</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>认真又恶搞的寿司袜</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>10.9<sub>双</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>现价</dt>
+                      <dd>8.8<sub>双</sub></dd>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_05">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+                    
+                  </p>
+                  <p><strong>455589</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>天然木手持PTC陶瓷电暖器</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>499<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价)</dt>
+                      <dd>438<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+      
+                  </p>
+                  <p><strong>788643</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>月光水晶变身盒 行动电源</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>138<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价</dt>
+                      <dd>98<sub>元</sub></dd>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="限时抢">抢</span>
+                  </p>
+                  <p><strong>110239</strong><sub>件</sub>
+                    <br><span>已售</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>认真又恶搞的寿司袜</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>10.9<sub>双</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>现价</dt>
+                      <dd>8.8<sub>双</sub></dd>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_06">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                
+                <div class="panel-body">
+                  <h5>天然木手持PTC陶瓷电暖器</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>499<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价)</dt>
+                      <dd>438<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                
+                <div class="panel-body">
+                  <h5>月光水晶变身盒 行动电源</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>138<sub>元</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>优惠价</dt>
+                      <dd>98<sub>元</sub></dd>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                
+                <div class="panel-body">
+                  <h5>认真又恶搞的寿司袜</h5>
+                  <div class="row">
+                    <div class="col-xs-6 text-left">
+                      <dt>原价</dt>
+                      <dd>10.9<sub>双</sub></dd>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <dt>现价</dt>
+                      <dd>8.8<sub>双</sub></dd>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /投资产品 -->
+  <!-- 新闻 -->
+  <section id="news">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-2">
+          <div class="news-title">
+            全部新闻
+          </div>
+        </div>
+        <div class="col-md-1">
+          <!-- Nav tabs -->
+          <ul class="nav nav-pills nav-stacked news-nav" role="tablist">
+            <li role="presentation"><a href="#news_1" aria-controls="news_1" role="tab" data-toggle="tab" data-title="最新资讯"><i class="iconfont icon-zuixingengxin"></i></a></li>
+            <li role="presentation"><a href="#news_2" aria-controls="news_2" role="tab" data-toggle="tab" data-title="品牌推荐"><i class="iconfont icon-pinpai"></i></a></li>
+            <li role="presentation"><a href="#news_3" aria-controls="news_3" role="tab" data-toggle="tab" data-title="创新好物"><i class="iconfont icon-dengpao"></i></a></li>
+            
+          </ul>
+          <i class="line hidden-sm hidden-xs"></i>
+        </div>
+        <div class="col-md-7">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="news_1">
+              <ul>
+                <li>【最新资讯】把阳台搬进室内！东京22坪纯白木质系亲子宅</li>
+                <li>【最新资讯】新北不止耶诞城！还能来趟穿越古今的板桥文青趣游</li>
+                <li>【最新资讯】把阳台搬进室内！东京22坪纯白木质系亲子宅</li>
+                <li>【最新资讯】新北不止耶诞城！还能来趟穿越古今的板桥文青趣游</li>
+                <li>【最新资讯】把阳台搬进室内！东京22坪纯白木质系亲子宅</li>
+                <li>【最新资讯】新北不止耶诞城！还能来趟穿越古今的板桥文青趣游</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_2">
+              <ul>
+                <li>【JOEY 双层陶瓷杯】不烫你手，只暖你心-冬季热饮的绝佳组合</li>
+                <li>【90° Vase】视错觉三角花瓶，挑战你的认知</li>
+                <li>【JOEY 双层陶瓷杯】不烫你手，只暖你心-冬季热饮的绝佳组合</li>
+                <li>【90° Vase】视错觉三角花瓶，挑战你的认知</li>
+                <li>【JOEY 双层陶瓷杯】不烫你手，只暖你心-冬季热饮的绝佳组合</li>
+                <li>【90° Vase】视错觉三角花瓶，挑战你的认知</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_3">
+              <ul>
+                <li>【创新好物】Archon让无线充电更无线，每张桌子都可能成为充电器</li>
+                <li>【创新好物】超级刮须刀Trazor Razor！舒适×环保×帅气全兼顾！</li>
+                <li>【创新好物】Archon让无线充电更无线，每张桌子都可能成为充电器</li>
+                <li>【创新好物】超级刮须刀Trazor Razor！舒适×环保×帅气全兼顾！</li>
+                <li>【创新好物】Archon让无线充电更无线，每张桌子都可能成为充电器</li>
+                <li>【创新好物】超级刮须刀Trazor Razor！舒适×环保×帅气全兼顾！</li>
+
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /新闻 -->
+  
+    <!-- /登录页面 -->
+  <div class="modal fade">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">欢迎登录奇趣屋</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">邮箱账号</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="输入邮箱账号">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="输入密码">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">登录</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+   <!-- /底部 -->
+  <div class="footer">
+      <div class="ftCon-Wrapper">
+        <div id="ftConw">
+          <p id="lh">
+            <a id="setf" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">使用指南</a>
+            <a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})">关于奇趣屋</a>
+            <a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'}) ">About Interesting House</a>
+			<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})">合作伙伴</a>
+			<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})">营销中心</a>
+		  </p>
+          <p id="cp">
+		    <a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})">联系客服</a>
+            <a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'}) ">联系我们 880-850-3325</a>
+			<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})">意见反馈</a>
+		  </p>
+		  <p id="hd">
+		    <a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})">版权信息 © 2017-现在 Interesting House.com 版权所有</a>
+            <a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'}) ">法律声明</a>
+			<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})">知识产权</a>
+		  </p>
+        </div>
+      </div>
+  </div>
+  
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
